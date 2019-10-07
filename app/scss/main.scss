@@ -1,32 +1,63 @@
 body {
-    margin: 0;
-    padding: 0;
+  background-color: #fff;
+  padding-bottom: 1000px;
 }
 
-#map {
-    position:absolute; top:0; bottom:0; width:100%;
-    position: fixed;
-    width:50%;
+.pinned-content {
+  height: 1000px;
+  padding: 40px;
+
+
+  //this just means the .pinned-content element which also has the class name "first"
+  &.first {
+    background-color: #f9d9d9;
+  }
+
+  &.second {
+    background-color: #d9e6f9;
+  }
+
+  &.third {
+    background-color: #d9f9db;
+  }
 }
-#features {
-    width: 50%;
-    margin-left: 50%;
-    font-family: sans-serif;
-    overflow-y: scroll;
-    background-color: #fafafa;
-    padding-bottom:1000px;
+
+#customScene {
+  height: 1000px;
+  padding: 40px;
+  background-color: #ccc;
+
+  &.custom-active {
+    background-color: #307FB5;
+  }
 }
-section {
-    padding:  25px 50px;
-    line-height: 25px;
-    border-bottom: 1px solid #ddd;
-    opacity: 0.25;
-    font-size: 13px;
+
+.box {
+  width: 200px;
+  height: 150px;
+  background-color: #d9e6f9;
+  border: 10px solid #234c93;
 }
-section.active {
-    opacity: 1;
+
+svg {
+    text {
+        font-family:$body-font;
+    }
 }
-section:last-child {
-    border-bottom: none;
-    margin-bottom: 200px;
-}
+
+div.tooltip {
+       position: absolute;
+       text-align: center;
+       padding: 5px;
+       font-size: 14px;
+       font-weight: bold;
+       background: lightsteelblue;
+       border: 0px;
+       border-radius: 8px;
+       font-family: "Akkurat",sans-serif;
+   }
+
+   .tooltip p {
+       margin: 0;
+       padding: 0;
+   }

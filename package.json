@@ -1,7 +1,7 @@
 {
-  "name": "hocr-2019",
+  "name": "sustainabilityinteractive",
   "version": "1.0.0",
-  "description": "Head of the Charles course tour",
+  "description": "A sample gulp project that we can use as a template for local projects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

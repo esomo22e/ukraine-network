@@ -2,50 +2,73 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>Head of the Charles Tour</title>
+<meta charset="UTF-8">
+<title>Gulp Template</title>
+<link rel="stylesheet" href="css/styles.min.css">
 
-    <script src='//api.tiles.mapbox.com/mapbox-gl-js/v1.3.2/mapbox-gl.js'></script>
-    <link href='//api.tiles.mapbox.com/mapbox-gl-js/v1.3.2/mapbox-gl.css' rel='stylesheet' />
-    <link rel="stylesheet" href="css/styles.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.1/ScrollMagic.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script> -->
+<!-- <script src="js/library/vega@5.3.5.min.js"></script>
+<script src="js/library/vega-lite@3.2.1.min.js"></script>
+<script src="js/library/vega-embed@4.0.0.min.js"></script> -->
+<script src="js/library/d3.v5.min.js"></script>
+<script src="js/library/d3-tip.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 
 <body>
 
-    <div class="wrapper">
+  <div class="wrapper">
 
-        <div id="map"></div>
+      <h1>Column Chart</h1>
+      <div id="column"></div>
+      <hr style="margin:75px 0;">
 
-        <div id='features'>
-            <section id='start' class='active'>
-                <h3>Start</h3>
-                <p>November 1895. London is shrouded in fog and Sherlock Holmes and Watson pass time restlessly awaiting a new case. "The London criminal is certainly a dull fellow," Sherlock bemoans. "There have been numerous petty thefts," Watson offers in response. Just then a telegram arrives from Sherlock's brother Mycroft with a mysterious case.</p>
-            </section>
-            <section id='river'>
-                <h3>River Street Bridge</h3>
-                <p>Arthur Cadogan West was found dead, head crushed in on train tracks at Aldgate Station at 6AM Tuesday morning. West worked at Woolwich Arsenal on the Bruce-Partington submarine, a secret military project. Plans for the submarine had been stolen and seven of the ten missing papers were found in West's possession. Mycroft implores Sherlock to take the case and recover the three missing papers.</p>
-            </section>
-            <section id='weeks'>
-                <h3>Weeks Bridge</h3>
-                <p>Holmes and Watson's investigations take them across London. Sherlock deduces that West was murdered elsewhere, then moved to Aldgate Station to create the illusion that he was crushed on the tracks by a train. On their way to Woolwich Sherlock dispatches a telegram to Mycroft at London Bridge: "Send list of all foreign spies known to be in England, with full address."</p>
-            </section>
-            <section id='eliot'>
-                <h3>Eliot Bridge</h3>
-                <p>While investigating at Woolwich Arsenal Sherlock learns that West did not have the three keys&mdash;door, office, and safe&mdash;necessary to steal the papers. The train station clerk mentions seeing an agitated West boarding the 8:15 train to London Bridge. Sherlock suspects West of following someone who had access to the Woolwich chief's keyring with all three keys.</p>
-            </section>
-            <section id='finish'>
-                <h3>Herter Park Finish Line</h3>
-                <p>Mycroft responds to Sherlock's telegram and mentions several spies. Hugo Oberstein of 13 Caulfield Gardens catches Sherlock's eye. He heads to the nearby Gloucester Road station to investigate and learns that the windows of Caulfield Gardens open over rail tracks where trains stop frequently.</p>
-            </section>
-        </div>
+      <h1>Grouped Column Chart</h1>
+      <div id="groupedcolumn"></div>
+      <hr style="margin:75px 0;">
+
+      <h1>Line Chart</h1>
+      <div id="line"></div>
+      <hr style="margin:75px 0;">
+
+      <h1>Multi-Line Chart</h1>
+      <div id="multiline"></div>
+      <hr style="margin:75px 0;">
+
+      <h1>Bar Chart</h1>
+      <div id="bar"></div>
+      <hr style="margin:75px 0;">
+
+      <h1>Grouped Bar Chart</h1>
+      <div id="groupedbar"></div>
+      <hr style="margin:75px 0;">
+
+      <h1>Stacked Column Chart</h1>
+      <div id="stackedcolumn"></div>
+      <hr style="margin:75px 0;">
+
+      <h1>Stacked Bar Chart</h1>
+      <div id="stackedcolumn"></div>
+      <hr style="margin:75px 0;">
 
 
-    </div>
+      <h1>Scatter Plot</h1>
+      <div id="scatter"></div>
+      <hr style="margin:75px 0;">
 
-    <!--build:js js/main.min.js -->
-    <script src="js/plugins/boilerplate.js"></script>
-    <!--endbuild-->
+
+  </div>
+
+  <!--build:js js/main.min.js -->
+  <script src="js/plugins/boilerplate.js"></script>
+  <script src="js/plugins/d3-column.js"></script>
+  <script src="js/plugins/d3-groupcolumn.js"></script>
+  <!-- <script src="js/plugins/d3-coal.js"></script> -->
+  <script src="js/plugins/d3-donut.js"></script>
+  <script src="js/plugins/d3-map.js"></script>
+  <!--endbuild-->
 
 </body>
 
