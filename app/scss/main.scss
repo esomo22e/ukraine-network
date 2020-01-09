@@ -1,63 +1,125 @@
-body {
-  background-color: #fff;
-  padding-bottom: 1000px;
+body{
+  max-width: 1000px;
+  margin: 0px auto;
+  padding-bottom: 100px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #F0F8FF;
 }
 
-.pinned-content {
-  height: 1000px;
-  padding: 40px;
+h1{
+  margin: 50px;
+}
+
+h1, h3, h4{
+  text-align: center;
+}
 
 
-  //this just means the .pinned-content element which also has the class name "first"
-  &.first {
-    background-color: #f9d9d9;
+#container{
+  position: relative;
+}
+
+#sections{
+  // width: 340px;
+  width: auto;
+  position: relative;
+  margin: 0px auto;
+}
+
+
+#sections > div{
+  background: #fff;
+  // opacity: 0.2;
+  // margin-bottom: 200px;
+  // padding: 10px;
+  padding: 20px 18px;
+  border: 1px solid #d2d2d2;
+  box-shadow: -1px -1px 5px -1px rgba(0, 0, 0, 0.19), 3px 4px 5px 0px
+    rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+  // border-top: 1px solid;
+  // border-bottom: 1px solid;
+  margin-bottom: 80vh;
+
+
+}
+
+#sections > div:last-child{
+  margin-bottom: 30px;
+  top:50%;
+  transform:translateY(-150%);
+}
+#sections > div.graph-scroll-active{
+  opacity: 0.9;
+}
+
+#graph{
+  margin-left: 40px;
+  // width: 500px;
+  width:100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px;
+  // float: right;
+  margin-left: 0px;
+  float:none;
+}
+pre{
+  overflow: hidden;
+}
+
+
+@media (max-width: 925px)  {
+  #graph{
+    width: 100%;
+    margin-left: 0px;
+    float: none;
   }
 
-  &.second {
-    background-color: #d9e6f9;
+  #sections{
+    width: auto;
+    position: relative;
+    margin: 0px auto;
   }
 
-  &.third {
-    background-color: #d9f9db;
+  #sections > div{
+    padding: 10px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    margin-bottom: 80vh;
+  }
+
+  pre{
+    overflow: hidden;
+  }
+
+  h1{
+    margin: 10px;
   }
 }
 
-#customScene {
-  height: 1000px;
-  padding: 40px;
-  background-color: #ccc;
 
-  &.custom-active {
-    background-color: #307FB5;
-  }
+
+.mono{
+  font-family: monospace;
 }
 
-.box {
-  width: 200px;
-  height: 150px;
-  background-color: #d9e6f9;
-  border: 10px solid #234c93;
+svg{
+  // background-color: #eee;
 }
 
-svg {
-    text {
-        font-family:$body-font;
-    }
+line.node-link, path.node-link {
+  fill: none;
+  // stroke: black
 }
-
-div.tooltip {
-       position: absolute;
-       text-align: center;
-       padding: 5px;
-       font-size: 14px;
-       font-weight: bold;
-       background: lightsteelblue;
-       border: 0px;
-       border-radius: 8px;
-       font-family: "Akkurat",sans-serif;
-   }
-
-   .tooltip p {
-       margin: 0;
-       padding: 0;
-   }
+circle.node {
+  // fill: white;
+  // stroke: black
+}
+circle.node+text {
+  text-anchor: middle;
+}
+text {
+  font-family: sans-serif;
+  pointer-events: none;
+}

@@ -1,75 +1,99 @@
 <!DOCTYPE html>
 <html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<!-- <meta charset="UTF-8"> -->
 
 <head>
-<meta charset="UTF-8">
-<title>Gulp Template</title>
-<link rel="stylesheet" href="css/styles.min.css">
+    <title>Ukraine Network</title>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <!-- This visualisation mainly makes use of Adam Pearce's graph-scroll.js and a d3 block from https://bl.ocks.org/SpaceActuary/d6b5ca8e5fb17842d652d0de21e88a05 . Various other code snippets from stackoverflow have been used, have mentioned their urls . -->
 
-<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.1/ScrollMagic.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script> -->
-<!-- <script src="js/library/vega@5.3.5.min.js"></script>
-<script src="js/library/vega-lite@3.2.1.min.js"></script>
-<script src="js/library/vega-embed@4.0.0.min.js"></script> -->
-<script src="js/library/d3.v5.min.js"></script>
-<script src="js/library/d3-tip.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- <script type="text/javascript">
+    (function (i, s, o, g, r, a, m) {
+
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-78400808-1', 'auto');
+        ga('send', 'pageview');
+</script> -->
 </head>
 
 <body>
+    <!-- <img src = "js/assets/pak_min.png"> -->
+    <h1>Ukraine Network Timeline</h1>
+    <p class = "hed_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed dsiam nonummy
+    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    Ut wisi enim ad.</p>
 
-  <div class="wrapper">
+    <div id="container" class='container-1'>
+        <div id="graph"></div>
+        <!-- <div id = "line"></div> -->
+        <div id="sections">
 
-      <h1>Column Chart</h1>
-      <div id="column"></div>
-      <hr style="margin:75px 0;">
+            <!-- SEC 1 -->
 
-      <h1>Grouped Column Chart</h1>
-      <div id="groupedcolumn"></div>
-      <hr style="margin:75px 0;">
+            <div class="sec" id="part_1">
+                <h1>Ukraine Timeline</h1>
+                <h4>&dArr; SCROLL DOWN TO BEGIN &dArr;</h4>
+                <p class = "sec_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </p>
+            </div>
 
-      <h1>Line Chart</h1>
-      <div id="line"></div>
-      <hr style="margin:75px 0;">
+            <!-- SEC 2 -->
 
-      <h1>Multi-Line Chart</h1>
-      <div id="multiline"></div>
-      <hr style="margin:75px 0;">
-
-      <h1>Bar Chart</h1>
-      <div id="bar"></div>
-      <hr style="margin:75px 0;">
-
-      <h1>Grouped Bar Chart</h1>
-      <div id="groupedbar"></div>
-      <hr style="margin:75px 0;">
-
-      <h1>Stacked Column Chart</h1>
-      <div id="stackedcolumn"></div>
-      <hr style="margin:75px 0;">
-
-      <h1>Stacked Bar Chart</h1>
-      <div id="stackedcolumn"></div>
-      <hr style="margin:75px 0;">
+            <div class="sec" id="part_2">
+                <h3>Section 2</h3>
+                <p class = "sec_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            </div>
 
 
-      <h1>Scatter Plot</h1>
-      <div id="scatter"></div>
-      <hr style="margin:75px 0;">
+            <!-- SEC 3 -->
+
+            <div class="sec" id="part_3">
+                <h3>Section 3</h3>
+                <p class = "sec_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </p>
+            </div>
+
+            <!-- SEC 4 -->
+            <div class="sec" id="part_4">
+                <h3>Section 4</h3>
+                <p class = "sec_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </p>
+            </div>
+
+            <!-- SEC 5 -->
+            <div class="sec" id="part_5">
+                <h3>Section 5</h3>
+                <p class = "sec_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </p>
+
+            </div>
 
 
-  </div>
 
-  <!--build:js js/main.min.js -->
-  <script src="js/plugins/boilerplate.js"></script>
-  <script src="js/plugins/d3-column.js"></script>
-  <script src="js/plugins/d3-groupcolumn.js"></script>
-  <!-- <script src="js/plugins/d3-coal.js"></script> -->
-  <script src="js/plugins/d3-donut.js"></script>
-  <script src="js/plugins/d3-map.js"></script>
-  <!--endbuild-->
 
+
+
+        </div>
+
+        <script src="js/library/d3v4+jetpack.js"></script>
+        <script src="js/library/graph-scroll.js"></script>
+        <script src="js/main.min.js"></script>
 </body>
 
 </html>
